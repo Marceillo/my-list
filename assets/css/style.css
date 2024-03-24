@@ -1,7 +1,39 @@
-/* google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Gemstones&display=swap')
-
-/* Astrix */
+/* Astrix code*/
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #EEDD62 ;
+    color: #654321;
+    font-family:"Roboto", Lato;
+        
+}
+
+header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 3rem;
+    
+}
+
+form, header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* title name of the list */
+.title {
+    display: flex;
+    
+}
+/* Field inpput to add a new list item*/
+#add-container {
 
 }
+
+
