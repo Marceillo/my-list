@@ -23,16 +23,10 @@ header {
 
 }
 
-form {
-    display: flex;
-    position: relative;
-    padding: 5px;
-
-
-}
-
+/* Position the form in center */
 form,
 header {
+    position: relative;
     min-height: 10vh;
     display: flex;
     justify-content: center;
@@ -41,12 +35,12 @@ header {
 
 
 
-/* Field inpput to add a new list item*/
+/* Field input to add a new list item*/
 #add-container {
 
     display: flex;
-    justify-content: space-between;
-    color: #EEDD62;
+    align-items: center;
+
 
 }
 
@@ -59,19 +53,23 @@ button {
     font-size: 30px;
     outline: none;
     cursor: pointer;
-    
+
 
 }
 
 input,
 select {
-    background-color: #EEDD62;
-    color: #654321;
+    background-color: #654321;
+    color: #EEDD62;
     width: 150px;
     border-radius: 15px;
     border: 2px solid #654321;
     padding: 10px;
     outline: none;
-    
-    
+
+
+}
+/* This changes the placeholder font*/
+::placeholder {
+    color: #EEDD62;
 }
