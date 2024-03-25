@@ -40,6 +40,7 @@ header {
 
     display: flex;
     align-items: center;
+    position: relative;
 
 
 }
@@ -49,12 +50,19 @@ button {
     background-color: #EEDD62;
     color: #654321;
     border: none;
-    padding: 5px;
+    padding: 7px;
     font-size: 30px;
     outline: none;
     cursor: pointer;
 
 
+}
+
+button:hover {
+    background-color: #654321;
+    border-radius: 10px;
+    color: #EEDD62;
+    outline: none;
 }
 
 input,
