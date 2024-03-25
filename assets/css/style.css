@@ -35,6 +35,24 @@ form, header {
 
 display: flex;
 justify-content: space-between;
+padding: 5px;
+background-color: #654321;
+color: #EEDD62 ;
+
 
 }
 
+button {
+
+    background-color: #EEDD62;
+    color: #654321;
+    border: none;
+    padding: 3px;
+    font-size: 20px;
+
+}
+
+input [type-text] {
+    background-color: #EEDD62;
+    color: #654321;
+}
