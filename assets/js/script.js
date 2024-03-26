@@ -24,9 +24,10 @@ inputbutton.addEventListener("click", taskAdd);
 function taskAdd(event) {
     //prevent form from submitting 
     event.preventDefault();
+    
     //outlist div 
    const outDiv = document.createElement("div");
-   outDiv.classList.add("outdivcontainer");
+   outDiv.classList.add("listdiv");
    //create Li 
    const newListItem = document.createElement('li');
    newListItem.innerText = 'mmm';
@@ -40,10 +41,10 @@ function taskAdd(event) {
    //delete Button 
    const deletButton = document.createElement('button');
    deletButton.innerHTML = '<i class="fa-solid fa-square-minus"></i>';
-   deletButton.classList.add("done");
+   deletButton.classList.add("delet");
    outDiv.appendChild(deletButton);
    //add to ul list 
    inputoutlist.appendChild(outDiv);
-
+ 
    
 }

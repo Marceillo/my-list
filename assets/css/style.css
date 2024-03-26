@@ -45,13 +45,13 @@ header {
 
 }
 
-input,
+.additem,
 select {
     background-color: #654321;
     color: #EEDD62;
     width: 150px;
     border-radius: 15px;
-    border: 2px solid #654321;
+    border:2px solid #654321;
     padding: 10px;
     outline: none;
 
@@ -83,6 +83,39 @@ button:hover {
     color: #EEDD62;
 }
 
+
+/* Target the out div element*/
+.listdiv {
+    min-width: 40%;
+    margin: 1rem;
+    background-color: #654321;
+    display: flex;
+    border-radius: 15px;
+    border:2px solid #654321;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Target ul */
+.listblocks {
+    list-style: none;
+   
+          
+}
+/* Target li*/
+.new-item {
+    color: #EEDD62;
+    margin: 1rem;
+    
+            
+}
+
+.done, .delet {
+    border: none;
+}
+
+
 @media screen and (max-width: 768px) {
 
     #addcontainer {
@@ -105,3 +138,4 @@ button:hover {
         order: 3;
     }
 }
+
