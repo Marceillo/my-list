@@ -51,7 +51,7 @@ select {
     color: #EEDD62;
     width: 150px;
     border-radius: 15px;
-    border:2px solid #654321;
+    border: 2px solid #654321;
     padding: 10px;
     outline: none;
 
@@ -85,34 +85,58 @@ button:hover {
 
 
 /* Target the out div element*/
-.listdiv {
-    min-width: 40%;
-    margin: 1rem;
-    background-color: #654321;
+
+.outdivcontainer {
     display: flex;
-    border-radius: 15px;
-    border:2px solid #654321;
     justify-content: center;
-    align-items: center;
-    
+    align-content: center;
+}
+
+.listdiv {
+    margin: 1rem;
+    background: #654321;
+    border-radius: 15px;
+    border: 5px solid #654321;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.listdiv li {
+    flex: 1;
 }
 
 /* Target ul */
 .listblocks {
+    min-width: 30%;
     list-style: none;
-   
-          
+
+
 }
+
 /* Target li*/
 .new-item {
     color: #EEDD62;
     margin: 1rem;
-    
-            
+
 }
 
-.done, .delet {
+/*Style the button inside the js div*/
+.done,
+.delet {
     border: none;
+    background-color: #654321;
+    color: #EEDD62;
+    outline: none;
+
+}
+
+.done,
+.delet:hover {
+    background-color: #EEDD62;
+    border-radius: 10px;
+    color: #654321;
+    outline: none;
 }
 
 
@@ -122,20 +146,19 @@ button:hover {
         font-size: 15px;
         display: flex;
         flex-wrap: wrap;
-       padding: 20px;
+        padding: 20px;
     }
 
     .filter {
-       order: 1;
-       
+        order: 1;
+
     }
 
     .additem {
         order: 2;
     }
-    
+
     button {
         order: 3;
     }
 }
-
