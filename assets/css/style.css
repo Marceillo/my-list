@@ -36,7 +36,7 @@ header {
 
 
 /* Field input to add a new list item*/
-#add-container {
+#addcontainer {
 
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@ button:hover {
 
 @media screen and (max-width: 768px) {
 
-    #add-container {
+    #addcontainer {
         font-size: 15px;
         display: flex;
         flex-wrap: wrap;
@@ -97,7 +97,7 @@ button:hover {
        
     }
 
-    .add-item {
+    .additem {
         order: 2;
     }
     
