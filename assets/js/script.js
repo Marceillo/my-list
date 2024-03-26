@@ -30,7 +30,7 @@ function taskAdd(event) {
    outDiv.classList.add("listdiv");
    //create Li 
    const newListItem = document.createElement('li');
-   newListItem.innerText = 'mmm';
+   newListItem.innerText = inputlist.value;
    newListItem.classList.add('new-item');
    outDiv.appendChild(newListItem);
    //check button 
