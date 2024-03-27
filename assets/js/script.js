@@ -1,4 +1,4 @@
-//selector dom elements 
+//selector dom elements font size
 
 const inputlist = document.querySelector("#inputfield");
 //note test if class name works for button
@@ -6,14 +6,16 @@ const inputbutton = document.querySelector(".listbutton");
 //targets the div ul list 
 const inputoutlist = document.querySelector(".listblocks");
 //To filter the view 
-const filterview = document.querySelector(".filter");
+const filterView = document.querySelector(".filter");
 
 
 
 //lisener
 // eventlisner to get the document to local storage 
 inputbutton.addEventListener("click", taskAdd);
-inputoutlist.addEventListener('click', deletDone)
+//tes this lisener as code was changed below
+
+filterView.addEventListener("click", selectView);
 
 
 //functions 
@@ -65,11 +67,11 @@ function taskAdd(event) {
     inputoutlist.appendChild(outDiv);
     //clear input 
     inputlist.value = "";
-    // add to local storage 
-
+   
 }
 
-//Seleect Menu button 
+//Select Menu button 
 
+ // add to local storage 
 
 
