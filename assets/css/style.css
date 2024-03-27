@@ -12,6 +12,7 @@ body {
     background-color: #EEDD62;
     color: #654321;
     font-family: "Roboto", Lato;
+    
 
 
 }
@@ -58,7 +59,7 @@ select {
 
 }
 
-
+/*The button with in html to add the list task to the js div */
 button {
 
     background-color: #EEDD62;
@@ -68,7 +69,7 @@ button {
     font-size: 30px;
     outline: none;
     cursor: pointer;
-}
+} 
 
 button:hover {
     background-color: #654321;
@@ -84,7 +85,7 @@ button:hover {
 }
 
 
-/* Target the out div element*/
+/* Target the outer div element created in JS*/
 
 .outdivcontainer {
     display: flex;
@@ -92,6 +93,7 @@ button:hover {
     align-content: center;
 }
 
+/*Target the div that JS creates */
 .listdiv {
     margin: 1rem;
     background: #654321;
@@ -106,7 +108,7 @@ button:hover {
     flex: 1;
 }
 
-/* Target ul */
+/* Target ul in CSS */
 .listblocks {
     min-width: 30%;
     list-style: none;
@@ -114,20 +116,22 @@ button:hover {
 
 }
 
-/* Target li*/
+/* Target li in JS*/
 .new-item {
     color: #EEDD62;
     margin: 1rem;
 
 }
 
-/*Style the button inside the js div*/
+/*Style the buttons inside the js div*/
 .done,
 .delet {
     border: none;
     background-color: #654321;
     color: #EEDD62;
     outline: none;
+    
+  
 
 }
 
@@ -137,6 +141,7 @@ button:hover {
     border-radius: 10px;
     color: #654321;
     outline: none;
+   
 }
 
 
