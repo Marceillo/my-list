@@ -72,6 +72,51 @@ function taskAdd(event) {
 
 //Select Menu button 
 
+function selectView(e) {
+    const mylist = inputoutlist.childNodes;
+  
+    console.log('The list contains ' + mylist.length + ' items');
+    console.log("The filter target value is ='" + e.target.value + "'");
+    console.log('');
+  
+    console.log('Looping over child elements:');
+    var newListItem;
+    for (var i = 0; i < mylist.length; i++) {
+        newListItem = mylist[i];
+  
+        console.log("\titeration " + i);
+        console.log("\tchild element is " + newListItem.nodeName);
+        console.log("\tcss = " + newListItem.classList);
+        console.log("\telemnt HTML = " + newListItem.outerHTML);
+        console.log('\t');
+  
+        if (newListItem.nodeName === "LI") {
+            switch (e.target.value) {
+                case "all":
+                    newListItem.style.display = "flex";
+                    break;
+  
+                case "completed":
+                    if (newListItem.children[0].classList.contains("completed")) {
+                        newListItem.style.display = "flex";
+                    } else {
+                        newListItem.style.display = "none";
+                    }
+                    break;
+  
+                case "inprogress":
+                    if (newListItem.children[0].classList.contains("completed")) {
+                        newListItem.style.display = "none";
+                    } else {
+                        newListItem.style.display = "flex";
+                    }
+                    break;
+            }
+  }
+  }
+  }
+  
+
  // add to local storage 
 
 
