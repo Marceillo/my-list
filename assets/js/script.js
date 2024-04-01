@@ -1,4 +1,5 @@
-//selector dom elements font size
+//selector dom for local sto
+
 
 const inputlist = document.querySelector("#inputfield");
 //note test if class name works for button
@@ -12,9 +13,9 @@ const filterView = document.querySelector(".filter");
 
 //lisener
 // eventlisner to get the document to local storage 
-inputbutton.addEventListener("click", taskAdd);
-//tes this lisener as code was changed below
 
+inputbutton.addEventListener("click", taskAdd);
+//test this lisener as code was changed below
 filterView.addEventListener("click", selectView);
 
 
@@ -58,7 +59,10 @@ function taskAdd(event) {
             parent.style.removeProperty('textDecorationThickness');
         } else {
             parent.style.textDecoration = 'line-through';
+                               
         }
+        
+       
     });
 
     outDiv.appendChild(checkButton);
@@ -71,6 +75,7 @@ function taskAdd(event) {
     deletButton.addEventListener('click', event => {
         const parent = event.currentTarget.parentElement;
         parent.remove()
+       
     });
 
     outDiv.appendChild(deletButton);
@@ -78,6 +83,8 @@ function taskAdd(event) {
     inputoutlist.appendChild(outDiv);
     //clear input 
     inputlist.value = "";
+    //local storage
+   
 
     }
 
@@ -132,5 +139,7 @@ function selectView(e) {
   
 
  // add to local storage 
+
+
 
 
