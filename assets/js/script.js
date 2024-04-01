@@ -24,6 +24,12 @@ function taskAdd(event) {
     //prevent form from submitting 
     event.preventDefault();
 
+    const inputValue = inputlist.value.trim();
+    if (inputValue === "") {
+        alert("Please type text");
+        return;
+    }
+
     //outlist div 
     const outDiv = document.createElement("div");
     outDiv.classList.add("listdiv");
@@ -32,6 +38,7 @@ function taskAdd(event) {
     const newListItem = document.createElement('li');
     newListItem.innerText = inputlist.value;
     newListItem.classList.add('new-item');
+    
     outDiv.appendChild(newListItem);
    
     //check button 
@@ -67,8 +74,11 @@ function taskAdd(event) {
     inputoutlist.appendChild(outDiv);
     //clear input 
     inputlist.value = "";
-   
-}
+
+    }
+
+    
+
 
 //Select Menu button 
 
