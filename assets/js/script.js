@@ -23,10 +23,11 @@ filterView.addEventListener("click", selectView);
 function taskAdd(event) {
     //prevent form from submitting 
     event.preventDefault();
-
+    
+// Prevent from entering blank todo tasks
     const inputValue = inputlist.value.trim();
     if (inputValue === "") {
-        alert("Please type text");
+        alert("Please type text in field.");
         return;
     }
 
@@ -38,6 +39,9 @@ function taskAdd(event) {
     const newListItem = document.createElement('li');
     newListItem.innerText = inputlist.value;
     newListItem.classList.add('new-item');
+     
+
+
     
     outDiv.appendChild(newListItem);
    
