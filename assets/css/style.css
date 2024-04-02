@@ -47,8 +47,7 @@ header {
 
 }
 
-.additem,
-select {
+.additem {
     background-color: #654321;
     color: #EEDD62;
     width: 150px;
