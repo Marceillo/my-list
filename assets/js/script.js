@@ -11,10 +11,10 @@ const filterView = document.querySelector(".filter");
 
 //lisener
 // eventlisner to get the document to local storage 
-document.addEventListener ("DOMContentLoaded", addMYlistStorage);
+document.addEventListener ("DOMContentLoaded", getMylistStorage);
 inputbutton.addEventListener("click", taskAdd);
-//test this lisener as code was changed below
-filterView.addEventListener("click", selectView);
+
+
 
 
 //functions 
@@ -38,9 +38,6 @@ function taskAdd(event) {
     newListItem.innerText = inputlist.value;
     newListItem.classList.add('new-item');
     
-
-
-
 
     outDiv.appendChild(newListItem);
 
@@ -75,7 +72,7 @@ function taskAdd(event) {
         parent.remove()
        
         //local storage 
-    addMYlistStorage();
+    addMylistStorage();
 
     });
 
@@ -84,7 +81,7 @@ function taskAdd(event) {
     inputoutlist.appendChild(outDiv);
    
     //local storage 
-    addMYlistStorage();
+    addMylistStorage();
      //clear input 
     inputlist.value = "";
     
@@ -93,7 +90,7 @@ function taskAdd(event) {
 
 
 // Add to the local storage  
-function addMYlistStorage() {
+function addMylistStorage() {
 
     const listItems = [];
     const listDivs = document.querySelectorAll(".listdiv")
@@ -107,6 +104,56 @@ console.log(listItems)
 }
 
 // Get the list from the local storage 
+
+function getMylistStorage() {
+    
+    const storedList = JSON.parse(localStorage.getItem("storageList"));
+
+    storedList.forEach (item => {
+        const outDiv = document.createElement("div");
+    outDiv.classList.add("listdiv");
+
+    const newListItem = document.createElement('li');
+    newListItem.innerText = item;
+    newListItem.classList.add('new-item');
+
+    outDiv.appendChild(newListItem);
+
+    const checkButton = document.createElement('button');
+    checkButton.innerHTML = '<i class="fa-solid fa-square-check"></i>';
+    checkButton.classList.add("done");
+
+    checkButton.addEventListener('click', event => {
+        const parent = event.currentTarget.parentElement;
+        if (parent.style.textDecoration === 'line-through') {
+            parent.style.textDecoration = 'none';
+            parent.style.removeProperty('textDecorationThickness');
+        } else {
+            parent.style.textDecoration = 'line-through';
+
+        }
+     
+    });
+
+
+    outDiv.appendChild(checkButton);
+
+    const deletButton = document.createElement('button');
+    deletButton.innerHTML = '<i class="fa-solid fa-square-minus"></i>';
+    deletButton.classList.add("delet");
+   
+    deletButton.addEventListener('click', event => {
+        const parent = event.currentTarget.parentElement;
+        parent.remove()
+          
+    });
+
+    outDiv.appendChild(deletButton);
+    inputoutlist.appendChild(outDiv);
+    inputlist.value = "";
+
+    });
+}
 
 
 
