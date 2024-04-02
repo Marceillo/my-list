@@ -11,7 +11,7 @@ const filterView = document.querySelector(".filter");
 
 //lisener
 // eventlisner to get the document to local storage 
-
+document.addEventListener ("DOMContentLoaded", addMYlistStorage);
 inputbutton.addEventListener("click", taskAdd);
 //test this lisener as code was changed below
 filterView.addEventListener("click", selectView);
@@ -37,6 +37,7 @@ function taskAdd(event) {
     const newListItem = document.createElement('li');
     newListItem.innerText = inputlist.value;
     newListItem.classList.add('new-item');
+    
 
 
 
@@ -58,8 +59,7 @@ function taskAdd(event) {
             parent.style.textDecoration = 'line-through';
 
         }
-
-
+     //test and see if this code needs to local storage add function 
     });
 
 
@@ -73,22 +73,40 @@ function taskAdd(event) {
     deletButton.addEventListener('click', event => {
         const parent = event.currentTarget.parentElement;
         parent.remove()
+       
+        //local storage 
+    addMYlistStorage();
 
     });
 
     outDiv.appendChild(deletButton);
     //add to ul list 
     inputoutlist.appendChild(outDiv);
-    //clear input 
+   
+    //local storage 
+    addMYlistStorage();
+     //clear input 
     inputlist.value = "";
-    //local storage
-
+    
 
 }
 
 
 // Add to the local storage  
+function addMYlistStorage() {
 
+    const listItems = [];
+    const listDivs = document.querySelectorAll(".listdiv")
+    listDivs.forEach(div =>{
+        const listItem = div.querySelector(".new-item").innerText;
+        listItems.push(listItem);
+    });
+    
+    localStorage.setItem("storageList", JSON.stringify(listItems));
+console.log(listItems)
+}
 
 // Get the list from the local storage 
+
+
 
