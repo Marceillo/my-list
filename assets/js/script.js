@@ -1,5 +1,3 @@
-//selector dom for local sto
-
 
 const inputlist = document.querySelector("#inputfield");
 //note test if class name works for button
@@ -22,10 +20,9 @@ filterView.addEventListener("click", selectView);
 //functions 
 
 function taskAdd(event) {
-    //prevent form from submitting 
     event.preventDefault();
-    
-// Prevent from entering blank todo tasks
+
+    // Prevent from entering blank todo tasks
     const inputValue = inputlist.value.trim();
     if (inputValue === "") {
         alert("Please type text in field.");
@@ -35,17 +32,17 @@ function taskAdd(event) {
     //outlist div 
     const outDiv = document.createElement("div");
     outDiv.classList.add("listdiv");
-   
+
     //create Li 
     const newListItem = document.createElement('li');
     newListItem.innerText = inputlist.value;
     newListItem.classList.add('new-item');
-     
 
 
-    
+
+
     outDiv.appendChild(newListItem);
-   
+
     //check button 
     const checkButton = document.createElement('button');
     checkButton.innerHTML = '<i class="fa-solid fa-square-check"></i>';
@@ -59,11 +56,12 @@ function taskAdd(event) {
             parent.style.removeProperty('textDecorationThickness');
         } else {
             parent.style.textDecoration = 'line-through';
-                               
+
         }
-        
-       
+
+
     });
+
 
     outDiv.appendChild(checkButton);
 
@@ -75,7 +73,7 @@ function taskAdd(event) {
     deletButton.addEventListener('click', event => {
         const parent = event.currentTarget.parentElement;
         parent.remove()
-       
+
     });
 
     outDiv.appendChild(deletButton);
@@ -84,39 +82,39 @@ function taskAdd(event) {
     //clear input 
     inputlist.value = "";
     //local storage
-   
 
-    }
 
-    
+}
+
+
 
 
 //Select Menu button 
 
 function selectView(e) {
     const mylist = inputoutlist.childNodes;
-  
+
     console.log('The list contains ' + mylist.length + ' items');
     console.log("The filter target value is ='" + e.target.value + "'");
     console.log('');
-  
+
     console.log('Looping over child elements:');
     var newListItem;
     for (var i = 0; i < mylist.length; i++) {
         newListItem = mylist[i];
-  
+
         console.log("\titeration " + i);
         console.log("\tchild element is " + newListItem.nodeName);
         console.log("\tcss = " + newListItem.classList);
         console.log("\telemnt HTML = " + newListItem.outerHTML);
         console.log('\t');
-  
+
         if (newListItem.nodeName === "LI") {
             switch (e.target.value) {
                 case "all":
                     newListItem.style.display = "flex";
                     break;
-  
+
                 case "completed":
                     if (newListItem.children[0].classList.contains("completed")) {
                         newListItem.style.display = "flex";
@@ -124,7 +122,7 @@ function selectView(e) {
                         newListItem.style.display = "none";
                     }
                     break;
-  
+
                 case "inprogress":
                     if (newListItem.children[0].classList.contains("completed")) {
                         newListItem.style.display = "none";
@@ -133,13 +131,13 @@ function selectView(e) {
                     }
                     break;
             }
-  }
-  }
-  }
-  
-
- // add to local storage 
+        }
+    }
+}
 
 
+// Add to the local storage  
 
+
+// Get the list from the local storage 
 
