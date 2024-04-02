@@ -119,8 +119,9 @@ function getMylistStorage() {
     outDiv.classList.add("listdiv");
 
     const newListItem = document.createElement('li');
-    newListItem.innerText = item.text;
+    newListItem.innerText = item;
     newListItem.classList.add('new-item');
+    
     
     outDiv.appendChild(newListItem);
 
@@ -133,9 +134,13 @@ function getMylistStorage() {
         if (parent.style.textDecoration === 'line-through') {
             parent.style.textDecoration = 'none';
             parent.style.removeProperty('textDecorationThickness');
+
+           
+
         } else {
             parent.style.textDecoration = 'line-through';
 
+           
         }
      
     });
@@ -150,7 +155,7 @@ function getMylistStorage() {
     deletButton.addEventListener('click', event => {
         const parent = event.currentTarget.parentElement;
         parent.remove()
-          
+         
     });
 
     outDiv.appendChild(deletButton);
