@@ -56,7 +56,8 @@ function taskAdd(event) {
             parent.style.textDecoration = 'line-through';
 
         }
-     //test and see if this code needs to local storage add function 
+         //local storage 
+    addMylistStorage();
     });
 
 
@@ -88,8 +89,12 @@ function taskAdd(event) {
 
 }
 
-
-// Add to the local storage  
+/**
+*This function is for adding the list items to the local storage.
+*The first function adds the item in array to storage.
+*The secon function gets these items and displays it on the page.
+*/
+ 
 function addMylistStorage() {
 
     const listItems = [];
@@ -114,9 +119,9 @@ function getMylistStorage() {
     outDiv.classList.add("listdiv");
 
     const newListItem = document.createElement('li');
-    newListItem.innerText = item;
+    newListItem.innerText = item.text;
     newListItem.classList.add('new-item');
-
+    
     outDiv.appendChild(newListItem);
 
     const checkButton = document.createElement('button');
