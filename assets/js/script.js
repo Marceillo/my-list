@@ -101,7 +101,7 @@ function addMylistStorage() {
     const listDivs = document.querySelectorAll(".listdiv")
     listDivs.forEach(div =>{
         const listItem = div.querySelector(".new-item").innerText;
-        listItems.push(listItem);
+        listItems.push({ item: listItem });
     });
     
     localStorage.setItem("storageList", JSON.stringify(listItems));
@@ -119,7 +119,7 @@ function getMylistStorage() {
     outDiv.classList.add("listdiv");
 
     const newListItem = document.createElement('li');
-    newListItem.innerText = item;
+    newListItem.innerText = item.item;
     newListItem.classList.add('new-item');
     
     
@@ -142,7 +142,7 @@ function getMylistStorage() {
 
            
         }
-     
+        removeMylistStorage()
     });
 
 
