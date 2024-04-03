@@ -155,6 +155,7 @@ function getMylistStorage() {
     deletButton.addEventListener('click', event => {
         const parent = event.currentTarget.parentElement;
         parent.remove()
+        removeMylistStorage()
          
     });
 
