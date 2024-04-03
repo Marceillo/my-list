@@ -159,8 +159,10 @@ function getMylistStorage() {
    
     deletButton.addEventListener('click', event => {
         const parent = event.currentTarget.parentElement;
+        const itemText = parent.querySelector(".new-item").innerText;
         parent.remove()
        
+        removeMylistStorage(itemText);
     });
 
     outDiv.appendChild(deletButton);
@@ -176,3 +178,13 @@ function updateStorage() {
 }
 
 
+function removeMylistStorage(itemText) {
+    const storedList = JSON.parse(localStorage.getItem("storageList"));
+    const toRemove = storedList.findIndex(item => item.item === itemText);
+    if (toRemove !== -1) {
+        storedList.splice(toRemove, 1);
+        localStorage.setItem("storageList", JSON.stringify(storedList));
+
+    }
+    
+}
