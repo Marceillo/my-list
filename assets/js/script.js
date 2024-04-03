@@ -101,7 +101,7 @@ function addMylistStorage() {
     const listDivs = document.querySelectorAll(".listdiv")
     listDivs.forEach(div =>{
         const listItem = div.querySelector(".new-item").innerText;
-        listItems.push({ item: listItem });
+        listItems.push({ item: listItem, isCompleted: false });
     });
     
     localStorage.setItem("storageList", JSON.stringify(listItems));
@@ -122,6 +122,9 @@ function getMylistStorage() {
     newListItem.innerText = item.item;
     newListItem.classList.add('new-item');
     
+    if (item.isCompleted) {
+        newListItem.style.textDecoration = 'line-through';
+    }
     
     outDiv.appendChild(newListItem);
 
@@ -133,16 +136,18 @@ function getMylistStorage() {
         const parent = event.currentTarget.parentElement;
         if (parent.style.textDecoration === 'line-through') {
             parent.style.textDecoration = 'none';
+            item.isCompleted = false;
             parent.style.removeProperty('textDecorationThickness');
 
            
 
         } else {
             parent.style.textDecoration = 'line-through';
+            item.isCompleted = true;
 
            
         }
-        removeMylistStorage()
+        updateStorage();
     });
 
 
@@ -166,5 +171,9 @@ function getMylistStorage() {
     });
 }
 
+function updateStorage() {
+    const storedList = JSON.parse(localStorage.getItem("storageList"));
+    localStorage.setItem ("storageList", JSON.stringify(storedList));
+}
 
 
