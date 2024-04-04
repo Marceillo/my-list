@@ -7,8 +7,8 @@ For example, Love Maths is a site that hopes to demonstrate how pure JavaScript 
 ![Responsice Mockup](media/love_maths_mockup.png)
 
 # Contents
-* [**My list**](<#My List>)
-* [**User Experience UX**](<#user-experience-ux>)
+* [**Site Overview**](#My-List)
+* [**Features**](#Features)
     *  [User Stories](<#user-stories>)
     * [Wireframes](<#wireframes>)
     * [Site Structure](<#site-structure>)
