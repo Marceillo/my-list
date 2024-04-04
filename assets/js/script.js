@@ -1,24 +1,20 @@
 
+/* Selectors*/
 const inputlist = document.querySelector("#inputfield");
-//note test if class name works for button
 const inputbutton = document.querySelector(".listbutton");
-//targets the div ul list 
 const inputoutlist = document.querySelector(".listblocks");
-//To filter the view 
 const filterView = document.querySelector(".filter");
 
-
-
-//lisener
-// eventlisner to get the document to local storage 
+//Event Lisener
 document.addEventListener ("DOMContentLoaded", getMylistStorage);
 inputbutton.addEventListener("click", taskAdd);
 
 
-
-
-//functions 
-
+/** 
+ *Functions creat a new task with two buttons.
+ *Check button to indicate the task is done or not.
+ *Delete button to remove the task.
+ */
 function taskAdd(event) {
     event.preventDefault();
 
@@ -56,7 +52,7 @@ function taskAdd(event) {
             parent.style.textDecoration = 'line-through';
 
         }
-         //local storage 
+         //add to local storage 
     addMylistStorage();
     });
 
@@ -103,9 +99,8 @@ function addMylistStorage() {
         const listItem = div.querySelector(".new-item").innerText;
         listItems.push({ item: listItem, isCompleted: false });
     });
-    
+    console.log('listItems: ', listItems)
     localStorage.setItem("storageList", JSON.stringify(listItems));
-console.log(listItems)
 }
 
 // Get the list from the local storage 
@@ -136,16 +131,16 @@ function getMylistStorage() {
         const parent = event.currentTarget.parentElement;
         if (parent.style.textDecoration === 'line-through') {
             parent.style.textDecoration = 'none';
-            item.isCompleted = false;
+            item.isCompleted == false;
             parent.style.removeProperty('textDecorationThickness');
 
            
 
         } else {
             parent.style.textDecoration = 'line-through';
-            item.isCompleted = true;
-
-           
+            item.isCompleted == true;
+            // print out item when set to true
+            console.log('ITEM: ', item)
         }
         updateStorage();
     });
@@ -171,10 +166,11 @@ function getMylistStorage() {
 
     });
 }
-
+/* Check button update*/
 function updateStorage() {
     const storedList = JSON.parse(localStorage.getItem("storageList"));
-    localStorage.setItem ("storageList", JSON.stringify(storedList));
+    localStorage.setItem("storageList", JSON.stringify(storedList));
+    
 }
 
 
