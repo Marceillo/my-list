@@ -8,20 +8,20 @@ For example, Love Maths is a site that hopes to demonstrate how pure JavaScript 
 
 # Contents
 * [**Site Overview**](#My-List)
-* [**Features**](#Features)
-    *  [User Stories](<#user-stories>)
-    * [Wireframes](<#wireframes>)
-    * [Site Structure](<#site-structure>)
-    * [Design Choices](<#design-choices>)
-    *  [Typography](<#typography>)
-    *  [Colour Scheme](<#colour-scheme>)
-* [**Features**](<#features>)
-    * [**Home**](<#navigation-menu>)
-         * [Navigation menu](<#navigation-menu>)
-         * [Gallery](<#gallery>)
-         * [About-us](<#about-us>)
-         * [Testimonials](<#testimonials>)
-         * [Footer](<#footer>)
+* [**User Experience**](#user-experience)
+    *  [User Stories](#user-stories)
+    * [Wireframes](#wireframes)
+    * [Site Structure](#site-structure)
+    * [Design Choices](#design-choices)
+    *  [Typography](#typography)
+    *  [Colour Scheme](#colour-scheme)
+* [**Features**](#features)
+    * [**Home**](#navigation-menu)
+         * [Navigation menu](#navigation-menu)
+         * [Gallery](#gallery)
+         * [About-us](#about-us)
+         * [Testimonials](#testimonials)
+         * [Footer](#footer)
     * [**Projects**](<#projects>)
         * Dolls Cots
         * Height Chart
@@ -43,8 +43,21 @@ For example, Love Maths is a site that hopes to demonstrate how pure JavaScript 
     * [**Content**](<#content>)
     * [**Media**](<#media>)
 *  [**Acknowledgements**](<#acknowledgements>)
+  
+#User Experience
 
-## Features 
+##User Stories
+
+##Wireframes
+
+##Site Structure
+
+##Design Choices
+
+##Colour Scheme  
+
+
+## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
