@@ -30,54 +30,52 @@ This is a list for people to add to do tasks or any other item they would like t
 
 ## Site Structure
 
+- The site has a basic HTML structure  with a heading.
+- Below the heading is an input section and a button to add text.
+- Once the text is added, the user has some functional control to check and delete the task.
+- The focus was on the JavaScript code to create functionality for the site.
+  
 ## Design Choices
 
+- The idea is to make the list minimalist to improve the user's thought process.
+- The list below has a checked button and a delete button to add some user functionality.
+  
 ## Colour Scheme  
 
+- A two-tone color pallet was used for this site.
+- The buttons have the same colors and are inverted to improve visibility.
+  
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
 ### Existing Features
+
+- Favicon is a picture of a list to indicate this is a to-do list.
+- Input text
+- Add Button
+#### Javascript adding new tasks to the list.
+ - delete
+ - checked  
+ - Local Storage
+ - add to local
+ - remove from local
+  
 #### Inspiration
+
+- I like to use a to-do list daily as it is a functional tool.
+  
 #### Technologies Used
+- Html, CSS, Javascript
+- - Local Storage
 #### Future Features
-   
-- __The Love Maths Logo and Heading__
-
-  - Featured at the top of the page, the Love Maths logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
-
-![Logo](media/love_maths_logo.png)
-
-- __The Game Area__
-
-  - This section will allow the user to play the maths game. The user will be able to easily see icons for addition,  subtraction, multiplication, and division games.
-  - The user will be able to select the type of maths game they will be playing by clicking on the different icons. 
-
-![Game](media/love_maths_icons.png)
-
-- __The Question section__
-
-  - The question section is where the user will be able to see the elementary arithmetic question to answer as part of the game. The user will be able answer the questions in the answer box provide
-  - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly. 
-
-![Question](media/love_maths_question.png)
-
-- __The Score Area__
-
-  - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
-
-![score](media/love_maths_answer.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-### Features Left to Implement
-
-- Another feature idea
-      
+I would have liked to add more functionality to the list so that the user has more control such as below.
+ - Function to change the color schemes.
+ - Able to edit the list after adding it as a task.
+ - Able to import pictures to their tasks.
+ - Able to archive their tasks.
+ - Different windows for different tasks.
+ - Alert function 
+     
 ## Testing 
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
