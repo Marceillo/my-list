@@ -9,7 +9,6 @@ For example, Love Maths is a site that hopes to demonstrate how pure JavaScript 
 # Contents
 * [**Site Overview**](#My-List)
 * [**User Experience**](#user-experience)
-    *  [User Stories](#user-stories)
     * [Wireframes](#wireframes)
     * [Site Structure](#site-structure)
     * [Design Choices](#design-choices)
@@ -44,17 +43,15 @@ For example, Love Maths is a site that hopes to demonstrate how pure JavaScript 
     * [**Media**](<#media>)
 *  [**Acknowledgements**](<#acknowledgements>)
   
-#User Experience
+# User Experience
 
-##User Stories
+## Wireframes
 
-##Wireframes
+## Site Structure
 
-##Site Structure
+## Design Choices
 
-##Design Choices
-
-##Colour Scheme  
+## Colour Scheme  
 
 
 ## Features
