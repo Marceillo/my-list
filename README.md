@@ -15,33 +15,16 @@ For example, Love Maths is a site that hopes to demonstrate how pure JavaScript 
     *  [Typography](#typography)
     *  [Colour Scheme](#colour-scheme)
 * [**Features**](#features)
-    * [**Home**](#navigation-menu)
-         * [Navigation menu](#navigation-menu)
-         * [Gallery](#gallery)
-         * [About-us](#about-us)
-         * [Testimonials](#testimonials)
-         * [Footer](#footer)
-    * [**Projects**](<#projects>)
-        * Dolls Cots
-        * Height Chart
-        * Walker
-    * [**Inspiration**](<#inspiration>)
-        * Elm
-        * Oak
-        * Elm
-    * [**Contact Us**](<#contact-us>)
-       * Contact details
-       * Location map
-       * Design Query form
-    * [**Form Confirmation**](<#form-confirmation>)
-    * [**Future Features**](<#future-features>)
-* [**Technologies Used**](<#technologies-used>)
-* [**Testing**](<#testing>)
-* [**Deployment**](<#deployment>)
-* [**Credits**](<#credits>)
-    * [**Content**](<#content>)
-    * [**Media**](<#media>)
-*  [**Acknowledgements**](<#acknowledgements>)
+   * [Existing Features](#existing-Features)                        
+   * [**Inspiration**](<#inspiration>)
+   * [**Technologies Used**](<#technologies-used>)
+   * [**Future Features**](<#future-features>)   
+* [**##Testing**](#testing)
+* [**Deployment**](#deployment)
+* [**Credits**](#credits)
+    * [**Content**](#content)
+    * [**Media**](#media)
+*  [**Acknowledgements**](#acknowledgements)
   
 # User Experience
 
@@ -59,7 +42,10 @@ For example, Love Maths is a site that hopes to demonstrate how pure JavaScript 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 ### Existing Features
-
+#### Inspiration
+#### Technologies Used
+#### Future Features
+   
 - __The Love Maths Logo and Heading__
 
   - Featured at the top of the page, the Love Maths logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
@@ -93,7 +79,7 @@ In addition, you may also use this section to discuss plans for additional featu
 ### Features Left to Implement
 
 - Another feature idea
-
+      
 ## Testing 
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
@@ -136,7 +122,7 @@ The live link can be found here - https://code-institute-org.github.io/love-math
 
 
 ## Credits 
-
+  
 In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 
 You can break the credits section up into Content and Media, depending on what you have included in your project. 
@@ -170,4 +156,6 @@ Below you will find a couple of extra tips that may be helpful when completing y
   - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
   - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
 
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
+Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process!
+
+*  ## Acknowledgements
