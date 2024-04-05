@@ -5,6 +5,7 @@ const inputbutton = document.querySelector(".listbutton");
 const inputoutlist = document.querySelector(".listblocks");
 const filterView = document.querySelector(".filter");
 
+
 //Event Lisener
 document.addEventListener("DOMContentLoaded", getMylistStorage);
 inputbutton.addEventListener("click", taskAdd);
@@ -43,7 +44,7 @@ function taskAdd(event) {
     checkButton.innerHTML = '<i class="fa-solid fa-square-check"></i>';
     checkButton.classList.add("done");
 
-    //checkbutton when clicked 
+    //checkbutton event listener
     checkButton.addEventListener('click', event => {
         const parent = event.currentTarget.parentElement;
         if (parent.style.textDecoration === 'line-through') {
@@ -51,6 +52,7 @@ function taskAdd(event) {
            
         } else {
             parent.style.textDecoration = 'line-through';
+           
 
         }
         
@@ -95,10 +97,10 @@ function taskAdd(event) {
 function addMylistStorage() {
 
     const listItems = [];
-    const listDivs = document.querySelectorAll(".listdiv")
+    const listDivs = document.querySelectorAll(".listdiv");
     listDivs.forEach(div => {
         const listItem = div.querySelector(".new-item").innerText;
-        /* isComplted for the line through to persist after refresh*/
+        /* isComplted for the line through to persist after refresh not working*/
         const isCompleted = div.querySelector(".new-item").classList.contains('completed');
         listItems.push({ item: listItem, isCompleted: isCompleted });
     });
@@ -126,31 +128,30 @@ function getMylistStorage() {
 
         outDiv.appendChild(newListItem);
 
+        //Check button 
         const checkButton = document.createElement('button');
         checkButton.innerHTML = '<i class="fa-solid fa-square-check"></i>';
         checkButton.classList.add("done");
-
+         // check button event listener for getMylistStorage
         checkButton.addEventListener('click', event => {
             const parent = event.currentTarget.parentElement;
             if (parent.style.textDecoration === 'line-through') {
                 parent.style.textDecoration = 'none';
-                item.isCompleted == false;
-                parent.style.removeProperty('textDecorationThickness');
-
-
+                parent.isCompleted == false;
+                
 
             } else {
                 parent.style.textDecoration = 'line-through';
-                item.isCompleted == true;
-                // print out item when set to true
-                console.log('ITEM: ', item)
+                parent.isCompleted == true;
+                
+                
             }
             updateStorage();
         });
 
 
         outDiv.appendChild(checkButton);
-
+        //delet button 
         const deletButton = document.createElement('button');
         deletButton.innerHTML = '<i class="fa-solid fa-square-minus"></i>';
         deletButton.classList.add("delet");
