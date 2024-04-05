@@ -69,7 +69,7 @@ function taskAdd(event) {
         const parent = event.currentTarget.parentElement;
         parent.remove()
 
-        //local storage 
+        
        
 
     });
@@ -79,7 +79,7 @@ function taskAdd(event) {
     inputoutlist.appendChild(outDiv);
 
     //local storage 
-   
+    addMylistStorage();
     //clear input 
     inputlist.value = "";
 
