@@ -6,7 +6,7 @@ const inputoutlist = document.querySelector(".listblocks");
 const filterView = document.querySelector(".filter");
 
 //Event Lisener
-document.addEventListener ("DOMContentLoaded", getMylistStorage);
+document.addEventListener("DOMContentLoaded", getMylistStorage);
 inputbutton.addEventListener("click", taskAdd);
 
 
@@ -33,7 +33,7 @@ function taskAdd(event) {
     const newListItem = document.createElement('li');
     newListItem.innerText = inputlist.value;
     newListItem.classList.add('new-item');
-    
+
 
     outDiv.appendChild(newListItem);
 
@@ -52,8 +52,8 @@ function taskAdd(event) {
             parent.style.textDecoration = 'line-through';
 
         }
-         //add to local storage 
-    addMylistStorage();
+        //add to local storage 
+        addMylistStorage();
     });
 
 
@@ -67,21 +67,21 @@ function taskAdd(event) {
     deletButton.addEventListener('click', event => {
         const parent = event.currentTarget.parentElement;
         parent.remove()
-       
+
         //local storage 
-    addMylistStorage();
+        addMylistStorage();
 
     });
 
     outDiv.appendChild(deletButton);
     //add to ul list 
     inputoutlist.appendChild(outDiv);
-   
+
     //local storage 
     addMylistStorage();
-     //clear input 
+    //clear input 
     inputlist.value = "";
-    
+
 
 }
 
@@ -90,14 +90,16 @@ function taskAdd(event) {
 *The first function adds the item in array to storage.
 *The secon function gets these items and displays it on the page.
 */
- 
+
 function addMylistStorage() {
 
     const listItems = [];
     const listDivs = document.querySelectorAll(".listdiv")
-    listDivs.forEach(div =>{
+    listDivs.forEach(div => {
         const listItem = div.querySelector(".new-item").innerText;
-        listItems.push({ item: listItem, isCompleted: false });
+        /* isComplted for the line through to persist after refresh*/
+        const isCompleted = div.querySelector(".new-item").classList.contains('completed');
+        listItems.push({ item: listItem, isCompleted: isCompleted });
     });
     console.log('listItems: ', listItems)
     localStorage.setItem("storageList", JSON.stringify(listItems));
@@ -106,63 +108,63 @@ function addMylistStorage() {
 // Get the list from the local storage 
 
 function getMylistStorage() {
-    
+
     const storedList = JSON.parse(localStorage.getItem("storageList"));
 
-    storedList.forEach (item => {
+    storedList.forEach(item => {
         const outDiv = document.createElement("div");
-    outDiv.classList.add("listdiv");
+        outDiv.classList.add("listdiv");
 
-    const newListItem = document.createElement('li');
-    newListItem.innerText = item.item;
-    newListItem.classList.add('new-item');
-    
-    if (item.isCompleted) {
-        newListItem.style.textDecoration = 'line-through';
-    }
-    
-    outDiv.appendChild(newListItem);
+        const newListItem = document.createElement('li');
+        newListItem.innerText = item.item;
+        newListItem.classList.add('new-item');
 
-    const checkButton = document.createElement('button');
-    checkButton.innerHTML = '<i class="fa-solid fa-square-check"></i>';
-    checkButton.classList.add("done");
-
-    checkButton.addEventListener('click', event => {
-        const parent = event.currentTarget.parentElement;
-        if (parent.style.textDecoration === 'line-through') {
-            parent.style.textDecoration = 'none';
-            item.isCompleted == false;
-            parent.style.removeProperty('textDecorationThickness');
-
-           
-
-        } else {
-            parent.style.textDecoration = 'line-through';
-            item.isCompleted == true;
-            // print out item when set to true
-            console.log('ITEM: ', item)
+        if (item.isCompleted) {
+            newListItem.style.textDecoration = 'line-through';
         }
-        updateStorage();
-    });
+
+        outDiv.appendChild(newListItem);
+
+        const checkButton = document.createElement('button');
+        checkButton.innerHTML = '<i class="fa-solid fa-square-check"></i>';
+        checkButton.classList.add("done");
+
+        checkButton.addEventListener('click', event => {
+            const parent = event.currentTarget.parentElement;
+            if (parent.style.textDecoration === 'line-through') {
+                parent.style.textDecoration = 'none';
+                item.isCompleted == false;
+                parent.style.removeProperty('textDecorationThickness');
 
 
-    outDiv.appendChild(checkButton);
 
-    const deletButton = document.createElement('button');
-    deletButton.innerHTML = '<i class="fa-solid fa-square-minus"></i>';
-    deletButton.classList.add("delet");
-   
-    deletButton.addEventListener('click', event => {
-        const parent = event.currentTarget.parentElement;
-        const itemText = parent.querySelector(".new-item").innerText;
-        parent.remove()
-       
-        removeMylistStorage(itemText);
-    });
+            } else {
+                parent.style.textDecoration = 'line-through';
+                item.isCompleted == true;
+                // print out item when set to true
+                console.log('ITEM: ', item)
+            }
+            updateStorage();
+        });
 
-    outDiv.appendChild(deletButton);
-    inputoutlist.appendChild(outDiv);
-    inputlist.value = "";
+
+        outDiv.appendChild(checkButton);
+
+        const deletButton = document.createElement('button');
+        deletButton.innerHTML = '<i class="fa-solid fa-square-minus"></i>';
+        deletButton.classList.add("delet");
+
+        deletButton.addEventListener('click', event => {
+            const parent = event.currentTarget.parentElement;
+            const itemText = parent.querySelector(".new-item").innerText;
+            parent.remove()
+
+            removeMylistStorage(itemText);
+        });
+
+        outDiv.appendChild(deletButton);
+        inputoutlist.appendChild(outDiv);
+        inputlist.value = "";
 
     });
 }
@@ -170,7 +172,7 @@ function getMylistStorage() {
 function updateStorage() {
     const storedList = JSON.parse(localStorage.getItem("storageList"));
     localStorage.setItem("storageList", JSON.stringify(storedList));
-    
+
 }
 
 
@@ -182,5 +184,5 @@ function removeMylistStorage(itemText) {
         localStorage.setItem("storageList", JSON.stringify(storedList));
 
     }
-    
+
 }
