@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", getMylistStorage);
 inputbutton.addEventListener("click", taskAdd);
 
 
+
 /** 
  *Functions creat a new task with two buttons.
  *Check button to indicate the task is done or not.
@@ -47,13 +48,13 @@ function taskAdd(event) {
         const parent = event.currentTarget.parentElement;
         if (parent.style.textDecoration === 'line-through') {
             parent.style.textDecoration = 'none';
-            parent.style.removeProperty('textDecorationThickness');
+           
         } else {
             parent.style.textDecoration = 'line-through';
 
         }
-        //add to local storage 
-        addMylistStorage();
+        
+        
     });
 
 
@@ -69,7 +70,7 @@ function taskAdd(event) {
         parent.remove()
 
         //local storage 
-        addMylistStorage();
+       
 
     });
 
@@ -78,7 +79,7 @@ function taskAdd(event) {
     inputoutlist.appendChild(outDiv);
 
     //local storage 
-    addMylistStorage();
+   
     //clear input 
     inputlist.value = "";
 
