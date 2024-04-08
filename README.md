@@ -3,8 +3,7 @@
 This is a list for people to add to do tasks or any other item they would like to add for example a grocery list or any idea they wish to add. The name My List was chosen to be a functional tool to help with daily life and tasks. It's a plain, simple list with little distractions or images in the body. You can add items mark them as completed and delete them when needed.
 
 ![Responsive Mockup](assets/images/responsive-mockup.png)
-![Mobile image with tasks](assets/images/mobile-image.png)
-![Desktop view with tasks](assets/images/mylistplusitems.png)
+
 
 # Contents
 * [**Site Overview**](#My-List)
@@ -40,6 +39,8 @@ This is a list for people to add to do tasks or any other item they would like t
 - The focus was on the JavaScript code to create functionality for the site.
   
 ## Design Choices
+
+![Desktop view with tasks](assets/images/mylistplusitems.png)
 
 - The idea is to make the list minimalist to improve the user's thought process.
 - The list below has a checked button and a delete button to add some user functionality.
