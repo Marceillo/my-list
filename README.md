@@ -40,17 +40,16 @@ This is a list for people to add to do tasks or any other item they would like t
   
 ## Design Choices
 
-![Desktop view with tasks](assets/images/mylistplusitems.png)
-
 - The idea is to make the list minimalist to improve the user's thought process.
 - The list below has a checked button and a delete button to add some user functionality.
+
+![Desktop view with tasks](assets/images/mylistplusitems.png)
   
 ## Colour Scheme  
 
 - A two-tone color pallet was used for this site.
 - The buttons have the same colors and are inverted to improve visibility.
   
-
 ## Features
 
 ### Existing Features
@@ -59,21 +58,30 @@ This is a list for people to add to do tasks or any other item they would like t
 - Input text
 - Add Button
 #### Javascript adding new tasks to the list.
- - delete
- - checked  
- - Local Storage
- - add to local
- - remove from local
-  
+ - Add to Local Storage with the add button.
+ - The input field has a delete button and a checked button that removes items from the list
+##### Delete Button  
+ - The delete button has a hover style function to indicate to the user they are clicking on it.
+ - This button removes the item from the list the user does not need and from local storage.
+ - It needed two different functions to be able to do this one was to create the delete 
+   functionality and the other to delete the list from local storage.
+##### Checked  Button
+
+- When this button is checked, a line through function is created in Java script to indicate that the task has been completed to the end user.
+- The second feature is to update the to-list that the button has been checked and to keep it saved in that format.
+
 #### Inspiration
 
 - I like to use a to-do list daily as it is a functional tool.
+- I like using apps daily such as Google Keep.
   
 #### Technologies Used
 - Html, CSS, Javascript
-- - Local Storage
+- Chrome browser Local Storage.
+  
 #### Future Features
 I would have liked to add more functionality to the list so that the user has more control such as below.
+
  - Function to change the color schemes.
  - Able to edit the list after adding it as a task.
  - Able to import pictures to their tasks.
