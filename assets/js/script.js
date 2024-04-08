@@ -139,12 +139,12 @@ function getMylistStorage() {
             const parent = event.currentTarget.parentElement;
             if (parent.style.textDecoration === 'line-through') {
                 parent.style.textDecoration = 'none';
-                parent.isCompleted == false;
+                parent.isCompleted = false;
                 
 
             } else {
                 parent.style.textDecoration = 'line-through';
-                parent.isCompleted == true;
+                parent.isCompleted = true;
                 
                 
             }
