@@ -155,7 +155,7 @@ function getMylistStorage() {
         outDiv.appendChild(checkButton);
         //delet button 
         const deletButton = document.createElement('button');
-        deletButton.innerHTML = '<i class="fa-solid fa-square-minus"></i>';
+        deletButton.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
         deletButton.classList.add("delet");
 
         deletButton.addEventListener('click', event => {
