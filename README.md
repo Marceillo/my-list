@@ -114,7 +114,7 @@ If this section grows too long, you may want to split it off into a separate fil
   
   - Errors cleared
     
-    ![W3C validator](assets/images/html-validator-error1.png)
+    ![W3C validator](assets/images/html-validator-clear-errors.png)
        
       
 - CSS
