@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 
 /* Selectors*/
 const inputlist = document.querySelector("#inputfield");
@@ -114,6 +115,7 @@ function getMylistStorage() {
 
     const storedList = JSON.parse(localStorage.getItem("storageList"));
 
+
     storedList.forEach(item => {
         const outDiv = document.createElement("div");
         outDiv.classList.add("listdiv");
@@ -169,6 +171,8 @@ function getMylistStorage() {
         inputlist.value = "";
 
     });
+
+    
 }
 /* Check button update*/
 function updateStorage() {
