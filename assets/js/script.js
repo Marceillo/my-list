@@ -3,7 +3,7 @@
 const inputlist = document.querySelector("#inputfield");
 const inputbutton = document.querySelector(".listbutton");
 const inputoutlist = document.querySelector(".listblocks");
-const filterView = document.querySelector(".filter");
+
 
 
 //Event Lisener
