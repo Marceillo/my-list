@@ -110,18 +110,16 @@ I would have liked to add more functionality to the list so that the user has mo
        
       
 - CSS
-- CSS validator [Jshint validator](https://jigsaw.w3.org/css-validator/)
+- CSS validator [CSS validator](https://jigsaw.w3.org/css-validator/)
   
     ![W3C validator](assets/images/clear-css-validator.png)
   
 - JavaScript
     - Errors found in Jshint Validator [Jshint validator](https://jshint.com/)
-
-        [Jshint validator](https://jshint.com/)
-
+       
       - The following metrics were returned:
 
-        ![Jshint validator](assets/images/metrics.png)
+          ![Jshint validator](assets/images/metrics.png)
         
       - ES6 warning found
         
