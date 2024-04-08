@@ -18,7 +18,7 @@ This is a list for people to add to do tasks or any other item they would like t
    * [**Inspiration**](<#inspiration>)
    * [**Technologies Used**](<#technologies-used>)
    * [**Future Features**](<#future-features>)   
-* [**##Testing**](#testing)
+* [**Testing**](#testing)
 * [**Deployment**](#deployment)
 * [**Credits**](#credits)
     * [**Content**](#content)
