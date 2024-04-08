@@ -122,13 +122,18 @@ If this section grows too long, you may want to split it off into a separate fil
     ![W3C validator](assets/images/clear-css-validator.png)
   
 - JavaScript
-    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+    - Errors found in Jshint Validator
+
+        [Jshint validator](https://jshint.com/)
+
       - The following metrics were returned:
+
+        ![Jshint validator](assets/images/metrics.png)
         
-         ![Jshint validator](assets/images/metrics.png)
+      - ES6 warning found
         
-      - ES& warning found
-            ![Jshint validator](assets/images/error-mozilla-js-extention.png)
+        ![Jshint validator](assets/images/error-mozilla-js-extention.png)
+        
       - ES6 warning: Cleared by adding this comment to the top of the script /* jshint esversion: 6 */
         
       - Warnings cleared:
