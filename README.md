@@ -18,8 +18,8 @@ This is a list for people to add to do tasks or any other item they would like t
 * [**Features**](#features)
    * [Existing Features](#existing-Features)                        
    * [**Inspiration**](<#inspiration>)
-   * [**Technologies Used**](<#technologies-used>)
-   * [**Future Features**](<#future-features>)   
+   * [**Future Features**](<#future-features>)
+* [**Technologies Used**](<#technologies-used>)
 * [**Testing**](#testing)
 * [**Deployment**](#deployment)
 * [**Credits**](#credits)
@@ -77,10 +77,6 @@ This is a list for people to add to do tasks or any other item they would like t
 - I like to use a to-do list daily as it is a functional tool.
 - I like using apps daily such as Google Keep.
   
-#### Technologies Used
-- Html, CSS, Javascript
-- Chrome browser Local Storage.
-  
 #### Future Features
 I would have liked to add more functionality to the list so that the user has more control such as below.
 
@@ -90,7 +86,9 @@ I would have liked to add more functionality to the list so that the user has mo
  - Able to archive their tasks.
  - Different windows for different tasks.
  - Alert function 
-     
+## Technologies Used
+- Html, CSS, Javascript
+- Chrome browser Local Storage.    
 ## Testing 
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part, you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy way for the users to achieve their goals.
