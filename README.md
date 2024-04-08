@@ -85,8 +85,10 @@ I would have liked to add more functionality to the list so that the user has mo
  - Able to import pictures to their tasks.
  - Able to archive their tasks.
  - Different windows for different tasks.
- - Alert function 
+ - Alert function
+   
 ## Technologies Used
+
 - Html, CSS, Javascript
 - Chrome browser Local Storage.    
 ## Testing 
@@ -116,14 +118,28 @@ If this section grows too long, you may want to split it off into a separate fil
        
       
 - CSS
-    - No errors found ing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  
+    ![W3C validator](assets/images/clear-css-validator.png)
+  
 - JavaScript
     - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
-      - The following metrics were returned: 
-      - There are 11 functions in this file.
-      - Function with the largest signature takes 2 arguments, while the median is 0.
-      The largest function has 10 statements in it, while the median is 3.
-      - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
+      - The following metrics were returned:
+        
+         ![Jshint validator](assets/images/metrics.png)
+        
+      - ES& warning found
+            ![Jshint validator](assets/images/error-mozilla-js-extention.png)
+      - ES6 warning: Cleared by adding this comment to the top of the script /* jshint esversion: 6 */
+        
+      - Warnings cleared:
+       
+        ![Jshint validator](assets/images/warning-message-to-clear.png)
+      
+      - Semicolon error: Included semicolons to text.
+      - Changed the == to = as this was incorrect.  
+
+                      
+    
 
 ### Unfixed Bugs
 
