@@ -70,7 +70,7 @@ function taskAdd(event) {
     //delete button when clicked
     deletButton.addEventListener('click', event => {
         const parent = event.currentTarget.parentElement;
-        parent.remove()
+        parent.remove();
 
         
        
@@ -105,7 +105,7 @@ function addMylistStorage() {
         const isCompleted = div.querySelector(".new-item").classList.contains('completed');
         listItems.push({ item: listItem, isCompleted: isCompleted });
     });
-    console.log('listItems: ', listItems)
+    console.log('listItems: ', listItems);
     localStorage.setItem("storageList", JSON.stringify(listItems));
 }
 
@@ -161,7 +161,7 @@ function getMylistStorage() {
         deletButton.addEventListener('click', event => {
             const parent = event.currentTarget.parentElement;
             const itemText = parent.querySelector(".new-item").innerText;
-            parent.remove()
+            parent.remove();
 
             removeMylistStorage(itemText);
         });
