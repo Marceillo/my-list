@@ -28,6 +28,8 @@ This is a list for people to add to do tasks or any other item they would like t
 
 ## Wireframes
 
+![Wireframe](assets/images/wireframe.png)
+
 ## Site Structure
 
 - The site has a basic HTML structure  with a heading.
