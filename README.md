@@ -93,7 +93,7 @@ I would have liked to add more functionality to the list so that the user has mo
      
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part, you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy way for the users to achieve their goals.
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
@@ -109,8 +109,8 @@ If this section grows too long, you may want to split it off into a separate fil
     
     ![W3C validator](assets/images/html-validator-error1.png)
 
-  - Error one cleared :
-  - Error two cleared :
+  - Error one cleared: Cleared the error by adding an ID and method element in the structure.
+  - Error two cleared: Cleared by a typo in the form structure.
   
   - Errors cleared
     
@@ -118,13 +118,13 @@ If this section grows too long, you may want to split it off into a separate fil
        
       
 - CSS
-    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    - No errors found ing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JavaScript
     - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
       - The following metrics were returned: 
       - There are 11 functions in this file.
       - Function with the largest signature takes 2 arguments, while the median is 0.
-      - Largest function has 10 statements in it, while the median is 3.
+      The largest function has 10 statements in it, while the median is 3.
       - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
 
 ### Unfixed Bugs
