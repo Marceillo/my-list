@@ -96,6 +96,7 @@ I would have liked to add more functionality to the list so that the user has mo
 ### Validator Testing 
 
 - HTML
+  - HTML Validator [HTML validator](https://validator.w3.org/)
   - Errors found by W3C validator
     
     ![W3C validator](assets/images/html-validator-error1.png)
@@ -109,11 +110,12 @@ I would have liked to add more functionality to the list so that the user has mo
        
       
 - CSS
+- CSS validator [Jshint validator](https://jigsaw.w3.org/css-validator/)
   
     ![W3C validator](assets/images/clear-css-validator.png)
   
 - JavaScript
-    - Errors found in Jshint Validator
+    - Errors found in Jshint Validator [Jshint validator](https://jshint.com/)
 
         [Jshint validator](https://jshint.com/)
 
