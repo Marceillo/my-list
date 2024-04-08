@@ -65,7 +65,7 @@ function taskAdd(event) {
 
     //delete Button 
     const deletButton = document.createElement('button');
-    deletButton.innerHTML = '<i class="fa-solid fa-square-minus"></i>';
+    deletButton.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
     deletButton.classList.add("delet");
     //delete button when clicked
     deletButton.addEventListener('click', event => {
