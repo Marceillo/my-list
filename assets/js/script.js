@@ -50,9 +50,11 @@ function taskAdd(event) {
         const parent = event.currentTarget.parentElement;
         if (parent.style.textDecoration === 'line-through') {
             parent.style.textDecoration = 'none';
-           
+            
+            checkButton.style.color = '#654321';
         } else {
             parent.style.textDecoration = 'line-through';
+            checkButton.style.color = 'green';
            
 
         }
@@ -105,7 +107,7 @@ function addMylistStorage() {
         const isCompleted = div.querySelector(".new-item").classList.contains('completed');
         listItems.push({ item: listItem, isCompleted: isCompleted });
     });
-    console.log('listItems: ', listItems);
+   
     localStorage.setItem("storageList", JSON.stringify(listItems));
 }
 
@@ -123,9 +125,11 @@ function getMylistStorage() {
         const newListItem = document.createElement('li');
         newListItem.innerText = item.item;
         newListItem.classList.add('new-item');
+        
 
         if (item.isCompleted) {
             newListItem.style.textDecoration = 'line-through';
+            
         }
 
         outDiv.appendChild(newListItem);
@@ -140,15 +144,16 @@ function getMylistStorage() {
             if (parent.style.textDecoration === 'line-through') {
                 parent.style.textDecoration = 'none';
                 parent.isCompleted = false;
-                
+                checkButton.style.color = '#654321';
 
             } else {
                 parent.style.textDecoration = 'line-through';
                 parent.isCompleted = true;
-                
+               checkButton.style.color = 'green';
                 
             }
             updateStorage();
+            
         });
 
 
@@ -181,6 +186,7 @@ function updateStorage() {
     localStorage.setItem("storageList", JSON.stringify(storedList));
 
 }
+
 
 
 function removeMylistStorage(itemText) {
