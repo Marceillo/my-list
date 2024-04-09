@@ -70,15 +70,15 @@ This is a list for people to add to do tasks or any other item they would like t
    
    ![Delet and check button](assets/images/checked-display2.png)
    
- - Function for deleting in JS was also set to remove from Local Storage with the delete trash can button.
+ - Function for deleting in JS was also set to remove from Local Storage with the delete trashcan button.
  - The checked button has a line through once checked 
  
-##### Delete Button  
+##### Delete trashcan  Button  
+ 
  - The delete button has a hover style function to indicate to the user they are clicking on it.
- - This button removes the item from the list the user does not need and from local storage.
- - It needed two different functions to be able to do this one was to create the delete 
-   functionality and the other to delete the list from local storage.
-##### Checked  Button
+ - This button removes the item from the list the user no longer needs and from local storage as well.
+ 
+ ##### Checked  Button
 
 - When this button is checked, a line through function is created in Java script to indicate that the task has been completed to the end user.
 - The second feature is to update the to-list that the button has been checked and to keep it saved in that format.
@@ -100,8 +100,20 @@ I would have liked to add more functionality to the list so that the user has mo
    
 ## Technologies Used
 
-- Html, CSS, Javascript
-- Chrome browser Local Storage.    
+- [HTML5](https://dev.w3.org/html5/spec-LC/introduction.html) - provides the content and structure for the website.
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - provides the styling.
+- [Java](https://www.w3schools.com/whatis/whatis_js.asp) Java script that provides more functionality to the site.
+- [Balsamiq](https://balsamiq.com/wireframes/) - used to create the wireframes.
+- [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
+- [Github](https://github.com/) - used to host and edit the website.
+- [Am I responsive](https://ui.dev/amiresponsive) - This tool tests the site's responsiveness and provides an image used at the beginning of the document. 
+- [Jigsaw validator](https://jigsaw.w3.org/css-validator/) - used to look for errors and non-standard CSS code.
+- [W3C validator](https://validator.w3.org/) - used to look for errors and none standard HTML code.
+- Google Chrome's lighthouse for performance and accessibility tests for mobile and desktop modes.
+- [Jshint](https://jshint.com/) To detect errors and problems in the javacode.
+- [HTML validator](https://validator.w3.org/) To detect errors and problems in HTML.
+- [CSS validator](https://jigsaw.w3.org/css-validator/) To detect errors and problems in CSS.
+  
 ## Testing 
 
 ### Validator Testing 
@@ -143,8 +155,26 @@ I would have liked to add more functionality to the list so that the user has mo
         ![Jshint validator](assets/images/warning-message-to-clear.png)
       
       - Semicolon error: Included semicolons to text.
-      - Changed the == to = as this was incorrect.  
+      - Changed the == to = as this was incorrect.
+        
+- Lighthouse
+     - Desktop Result
+     
+     - Mobile Result
 
+-The My List site was tested on the following browsers with no visible issues for the user. 
+    - Google Chrome
+    - Mozilla Firefox
+    - Microsoft Edge
+    - Brave 
+ 
+-The responsive design was done manually with Chrome development tools built into the browser.
+
+|        | Galaxy Fold | Galaxy S8+ | iPhone 12pro | iPad mini  | iPad pro | Display <1024px | Display >1025px
+|--------|---------|-----------|----------|------|----------|-----------------|-----------------|
+| Render | pass    | pass      | pass     | pass | pass     | pass            | pass            |
+| Images | pass    | pass      | pass     | pass | pass     | pass            | pass            |
+| Links  | pass    | pass      | pass     | pass | pass     | pass            | pass            |
                       
     
 
@@ -169,6 +199,16 @@ The live link can be found here - https://code-institute-org.github.io/love-math
 In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 
 You can break the credits section up into Content and Media, depending on what you have included in your project. 
+https://kit.fontawesome.com/3b20d96fa9.js
+
+- [Favicon](https://icons8.com/icons/set/favicon-todo-list)
+- [W3schools](https://www.w3schools.com/)
+- [Stackoverflow](https://stackoverflow.com/)
+- [Youtube](youtube.com)
+- [W3docs](https://www.w3docs.com/)
+- [For local storage](https://www.tutorialstonight.com/to-do-list-javascript)
+- [Localstorage guide](-https://blog.logrocket.com/localstorage-javascript-complete-guide/)
+- [Clear the es js](https://stackoverflow.com/questions/54647294/const-is-available-in-es6-use-esversion-6)
 
 ### Content 
 
