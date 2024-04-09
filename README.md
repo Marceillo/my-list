@@ -209,6 +209,7 @@ https://kit.fontawesome.com/3b20d96fa9.js
 - [For local storage](https://www.tutorialstonight.com/to-do-list-javascript)
 - [Localstorage guide](-https://blog.logrocket.com/localstorage-javascript-complete-guide/)
 - [Clear the es js](https://stackoverflow.com/questions/54647294/const-is-available-in-es6-use-esversion-6)
+- [build a to do list]( https://thecodingpie.medium.com/how-to-build-a-todo-list-app-with-javascript-and-local-storage-a884f4ea3ec)
 
 ### Content 
 
