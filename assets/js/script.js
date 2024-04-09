@@ -115,7 +115,7 @@ function getMylistStorage() {
 
     const storedList = JSON.parse(localStorage.getItem("storageList"));
 
-
+    if (storedList !== null) {
     storedList.forEach(item => {
         const outDiv = document.createElement("div");
         outDiv.classList.add("listdiv");
@@ -173,6 +173,7 @@ function getMylistStorage() {
     });
 
     
+}
 }
 /* Check button update*/
 function updateStorage() {
