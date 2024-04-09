@@ -59,9 +59,16 @@ This is a list for people to add to do tasks or any other item they would like t
 - Favicon is a picture of a list to indicate this is a to-do list.
 - Input text
 - Add Button
-#### Javascript adding new tasks to the list.
- - Add to Local Storage with the add button.
+  
+#### Javascript adding new tasks to the list. 
+
+ - Java script function to add the task on the page and to local storage.
+   ![Add a task](assets/images/input-add-button.png)
  - The input field has a delete button and a checked button that removes items from the list
+   ![Delet and check button](assets/images/checked-display2.png)
+ - Function in JS was also set to remove from Local Storage with the delete button.
+ - The checked button has a line through once checked 
+ 
 ##### Delete Button  
  - The delete button has a hover style function to indicate to the user they are clicking on it.
  - This button removes the item from the list the user does not need and from local storage.
