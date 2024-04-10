@@ -195,15 +195,15 @@ I would have liked to add more functionality to the list so that the user has mo
 
  ### Unfixed Bugs
  
--The first is how JS code  moves a div inside of an ul element. It does not change the functionality but I would have liked to do it better next time in a more industry-standard way.
+- The first is how JS code  moves a div inside of an ul element. It does not change the functionality but I would have liked to do it better next time in a more industry-standard way.
 
-####steps Taken 
+#### steps Taken 
 
 - When I tried repairing this it broke my code this will mean coding both the CSS and Javascript again.
 
--The second bug is the checkbox line the green checkbox after being clicked works fine but after the page refresh the result does not stay marked only the text returns.
+- The second bug is the checkbox has an indicator to show it has been checked. After a page refresh, the result does not stay marked only the text returns without the checked indicator.
 
-####Steps taken 
+#### Steps taken 
 
   - Research online as to how the local storage works.
   - searched StackOverflow, W3schools, youtube tutorials,
@@ -213,11 +213,7 @@ I would have liked to add more functionality to the list so that the user has mo
   - I took a pen and paper wrote down my code flow and tried diagnosing it this way.
   - I have tried a few different codes in my JS to try and help with this problem but just can not find it.
   - Used the developer tools to try and debug along with console.log.
-    
-
-
-- Local storage I had a problem updating the checked and keeping it persist after Page refresh. 
-
+  
 ## Deployment
 
 Deployed the site on GitHub using the following procedure:
