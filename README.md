@@ -196,14 +196,13 @@ I would have liked to add more functionality to the list so that the user has mo
  ### Unfixed Bugs
  
 - The first is how JS code  moves a div inside of an ul element. It does not change the functionality but I would have liked to do it better next time in a more industry-standard way.
-
-#### Steps Taken 
-
-- When I tried repairing this it broke my code this will mean coding both the CSS and Javascript again.
-
 - The second bug is the checkbox, which has an indicator to show it has been checked. After a page refresh, the result does not stay marked only the text returns without the checked indicator.
 
-#### Steps taken 
+#### First bug Steps Taken 
+
+- When I tried repairing this it broke my code this will mean coding both the CSS and Javascript again.
+ 
+#### Second bug Steps taken 
 
   - Research online as to how the local storage works.
   - searched StackOverflow, W3schools, youtube tutorials,
