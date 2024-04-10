@@ -167,10 +167,10 @@ I would have liked to add more functionality to the list so that the user has mo
        ![Mobile](assets/images/mobile-lighthouse.png)
 
 -The My List site was tested on the following browsers with no visible issues for the user. 
-    - Google Chrome
-    - Mozilla Firefox
-    - Microsoft Edge
-    - Brave 
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Brave 
  
 -The responsive design was done manually with Chrome development tools built into the browser.
 
