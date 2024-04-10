@@ -229,11 +229,6 @@ The instruction link below on how to clone a project:
 - [Build a Todo List App](https://www.youtube.com/watch?v=6eFwtaZf6zc&list=WL&index=21)
 - [How To Create a To-Do List App](https://www.youtube.com/watch?v=CsO0UJSqaw0&list=WL&index=10)
 
-### Media
-
-- The photos used on the home and sign-up page are from This Open Source site
-- The images used for the gallery page were taken from this other open-source site
-
 ## Acknowledgements
 
 - I would like to thank my fellow student Sebastian Kefer for providing good troubleshooting ideas when I was stuck on bugs or problems it is nice to have support in these times.
