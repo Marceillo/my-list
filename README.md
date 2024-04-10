@@ -114,6 +114,7 @@ I would have liked to add more functionality to the list so that the user has mo
 - [Jshint](https://jshint.com/) To detect errors and problems in the javacode.
 - [HTML validator](https://validator.w3.org/) To detect errors and problems in HTML.
 - [CSS validator](https://jigsaw.w3.org/css-validator/) To detect errors and problems in CSS.
+- [Fontawesome](https://kit.fontawesome.com/3b20d96fa9.js) To detect errors and problems in CSS.
   
 ## Testing 
 
@@ -209,9 +210,6 @@ The instruction link below on how to clone a project:
 [Clone the project](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) 
 
 ## Credits 
-  
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-https://kit.fontawesome.com/3b20d96fa9.js
 
 - [Favicon](https://icons8.com/icons/set/favicon-todo-list)
 - [W3schools](https://www.w3schools.com/)
