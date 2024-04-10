@@ -74,16 +74,13 @@ button:hover {
     outline: none;
 }
 
-
 /* This changes the placeholder font*/
 ::placeholder {
 
     color: #EEDD62;
 }
 
-
 /* Target the outer div element created in JS*/
-
 .outdivcontainer {
 
     display: flex;
@@ -107,6 +104,7 @@ button:hover {
 
     flex: 1;
 }
+
 /* Target ul in CSS */
 .listblocks {
 
@@ -165,7 +163,7 @@ button:hover {
     }
 
     button {
-        
+
         order: 3;
     }
 }

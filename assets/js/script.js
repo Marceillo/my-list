@@ -76,7 +76,7 @@ function taskAdd(event) {
 /**
 *This function is for adding the list items to the local storage.
 *The first function adds the item in array to storage.
-*The secon function gets these items and displays it on the page.
+*The second function gets these items and displays it on the page.
 */
 function addMylistStorage() {
 
@@ -117,12 +117,12 @@ function getMylistStorage() {
                 const parent = event.currentTarget.parentElement;
                 if (parent.style.textDecoration === 'line-through') {
                     parent.style.textDecoration = 'none';
-                    parent.isCompleted = false;
+                    checkButton.isCompleted = false;
                     checkButton.style.color = '#654321';
 
                 } else {
                     parent.style.textDecoration = 'line-through';
-                    parent.isCompleted = true;
+                    checkButton.isCompleted = true;
                     checkButton.style.color = 'green';
 
                 }
@@ -153,11 +153,7 @@ function getMylistStorage() {
 
     }
 }
-/* Check button update*/
-function updateStorage() {
-    const storedList = JSON.parse(localStorage.getItem("storageList"));
-    localStorage.setItem("storageList", JSON.stringify(storedList));
-}
+
 
 function removeMylistStorage(itemText) {
     const storedList = JSON.parse(localStorage.getItem("storageList"));
@@ -168,4 +164,10 @@ function removeMylistStorage(itemText) {
 
     }
 
+}
+
+/* Check button update*/
+function updateStorage() {
+    const storedList = JSON.parse(localStorage.getItem("storageList"));
+    localStorage.setItem("storageList", JSON.stringify(storedList));
 }
