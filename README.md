@@ -159,8 +159,12 @@ I would have liked to add more functionality to the list so that the user has mo
         
 - Lighthouse
      - Desktop Result
-     
+
+       ![Jshint validator](assets/images/warning-message-to-clear.png)
+            
      - Mobile Result
+
+       ![Jshint validator](assets/images/warning-message-to-clear.png)
 
 -The My List site was tested on the following browsers with no visible issues for the user. 
     - Google Chrome
