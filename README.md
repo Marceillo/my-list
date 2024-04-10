@@ -220,17 +220,16 @@ https://kit.fontawesome.com/3b20d96fa9.js
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page  taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- YouTube tutorial that helped
+- [Tutorial guide for YouTube](https://www.youtube.com/watch?v=Ttf3CEsEwMQ&list=WL&index=33)
+- [JavaScript LocalStorage](https://www.youtube.com/watch?v=zmFDvFwj6-8&list=WL&index=29)
+- [Build a Todo List App](https://www.youtube.com/watch?v=6eFwtaZf6zc&list=WL&index=21)
+- [How To Create a To Do List App](https://www.youtube.com/watch?v=CsO0UJSqaw0&list=WL&index=10)
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
+- The photos used on the home and sign-up page are from This Open Source site
+- The images used for the gallery page were taken from this other open-source site
 
 ## Acknowledgements
 
