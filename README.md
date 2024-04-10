@@ -44,6 +44,7 @@ This is a list for people to add to do tasks or any other item they would like t
 
 - The idea is to make the list minimalist to improve the user's thought process.
 - The list below has a checked button and a delete button to add some user functionality.
+- It has added functionality by utilizing the local storage of the browser so when you exit and return your items are still there.
 
 ![Desktop view with tasks](assets/images/mylistplusitems.png)
   
@@ -51,18 +52,17 @@ This is a list for people to add to do tasks or any other item they would like t
 
 - A two-tone color pallet was used for this site.
 - The buttons have the same colors and are inverted to improve visibility.
+- When you check the button it has a line through  text style and turns green to indicate that it has been checked.
   
 ## Features
 
 ### Existing Features
 
 - Favicon is a picture of a list to indicate this is a to-do list.
-- Input text
-- Add Button
   
 #### Javascript adding new tasks to the list. 
 
- - Java script function to add the task on the page and to local storage.
+ - Java script function to add the task on the page and to the local storage.
    
     ![Add a task](assets/images/input-add-button.png)
    
@@ -96,7 +96,7 @@ I would have liked to add more functionality to the list so that the user has mo
  - Able to import pictures to their tasks.
  - Able to archive their tasks.
  - Different windows for different tasks.
- - Alert function
+ - Alert function to alert users of tasks based on the date set for them to be completed.
    
 ## Technologies Used
 
@@ -180,24 +180,31 @@ I would have liked to add more functionality to the list so that the user has mo
 
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+- I had a problem with the border-radius style when you added a new task to the input field. As it was not working I found a parent with the same rule and deleted the duplicate rule and this repaired my problem.
+- I had a problem with how the border in the element div from JS is displayed. The solution in the end was to program JS to use a different class name and this resolved the issues. 
+- The buttons for delete and checked had the issue as when you clicked on the icon element it did not work but when you clicked near it worked. Adjusted the function to see the whole element in Js.
+- Local storage I had a problem with updating the checked and keeping it persist after refresh. Unfortunately have not found a solution.
+- steps taken
+  - 
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+Deployed the site on GitHub using the following procedure:
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+1. By clicking Repository/settings/pages 
+2. Selecting the source tab then change to the main branch and save.
+3. I then went to the deployed site and viewed the live site.
 
-The live link can be found here - https://code-institute-org.github.io/love-maths/
+The instruction link below on how to fork a project:
 
+[Fork the project]([https://dev.w3.org/html5/spec-LC/introduction.html](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+
+The instruction link below on how to clone a project:
+
+[Clone the project]([https://github.com/](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) 
 
 ## Credits 
   
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
 You can break the credits section up into Content and Media, depending on what you have included in your project. 
 https://kit.fontawesome.com/3b20d96fa9.js
 
@@ -209,12 +216,12 @@ https://kit.fontawesome.com/3b20d96fa9.js
 - [For local storage](https://www.tutorialstonight.com/to-do-list-javascript)
 - [Localstorage guide](-https://blog.logrocket.com/localstorage-javascript-complete-guide/)
 - [Clear the es js](https://stackoverflow.com/questions/54647294/const-is-available-in-es6-use-esversion-6)
-- [build a to do list]( https://thecodingpie.medium.com/how-to-build-a-todo-list-app-with-javascript-and-local-storage-a884f4ea3ec)
+- [build a to-do list]( https://thecodingpie.medium.com/how-to-build-a-todo-list-app-with-javascript-and-local-storage-a884f4ea3ec)
 
 ### Content 
 
 - The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
+- Instructions on how to implement form validation on the Sign Up page  taken from [Specific YouTube Tutorial](https://www.youtube.com/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
@@ -227,21 +234,10 @@ Congratulations on completing your Readme, you have made another big stride in t
 
 ## Acknowledgements
 
-## Other General Project Advice
+- I would like to thank my fellow student Sebastian Kefer for providing good troubleshooting ideas when I was stuck on bugs or problems it is nice to have support in these times.
+- Thank you to my mentor who in this project has helped guide me.
+   
 
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
 
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process!
 
 
