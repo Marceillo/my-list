@@ -108,7 +108,7 @@ I would have liked to add more functionality to the list so that the user has mo
 - [Github](https://github.com/) - used to host and edit the website.
 - [Am I responsive](https://ui.dev/amiresponsive) - This tool tests the site's responsiveness and provides an image used at the beginning of the document. 
 - [Jigsaw validator](https://jigsaw.w3.org/css-validator/) - used to look for errors and non-standard CSS code.
-- [W3C validator](https://validator.w3.org/) - used to look for errors and none standard HTML code.
+- [W3C validator](https://validator.w3.org/) - used to look for errors and non-standard HTML code.
 - Google Chrome's lighthouse for performance and accessibility tests for mobile and desktop modes.
 - [Jshint](https://jshint.com/) To detect errors and problems in the javacode.
 - [HTML validator](https://validator.w3.org/) To detect errors and problems in HTML.
@@ -193,7 +193,7 @@ Deployed the site on GitHub using the following procedure:
 
 1. By clicking Repository/settings/pages 
 2. Selecting the source tab then change to the main branch and save.
-3. I then went to the deployed site and viewed the live site.
+3. I then visited the deployed site and viewed the live site.
 
 The instruction link below on how to fork a project:
 
@@ -220,11 +220,11 @@ https://kit.fontawesome.com/3b20d96fa9.js
 
 ### Content 
 
-- YouTube tutorial that helped
+#### YouTube tutorial that helped
 - [Tutorial guide for YouTube](https://www.youtube.com/watch?v=Ttf3CEsEwMQ&list=WL&index=33)
 - [JavaScript LocalStorage](https://www.youtube.com/watch?v=zmFDvFwj6-8&list=WL&index=29)
 - [Build a Todo List App](https://www.youtube.com/watch?v=6eFwtaZf6zc&list=WL&index=21)
-- [How To Create a To Do List App](https://www.youtube.com/watch?v=CsO0UJSqaw0&list=WL&index=10)
+- [How To Create a To-Do List App](https://www.youtube.com/watch?v=CsO0UJSqaw0&list=WL&index=10)
 
 ### Media
 
@@ -234,7 +234,7 @@ https://kit.fontawesome.com/3b20d96fa9.js
 ## Acknowledgements
 
 - I would like to thank my fellow student Sebastian Kefer for providing good troubleshooting ideas when I was stuck on bugs or problems it is nice to have support in these times.
-- Thank you to my mentor who in this project has helped guide me.
+- Thank you to my mentor who has helped guide me in this project.
    
 
 
