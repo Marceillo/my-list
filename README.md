@@ -71,7 +71,8 @@ This is a list for people to add to do tasks or any other item they would like t
    ![Delet and check button](assets/images/checked-display2.png)
    
  - Function for deleting in JS was also set to remove from Local Storage with the delete trashcan button.
- - The checked button has a line through once checked 
+ - The checked button has a line through once checked
+   ![Delet and check button](assets/images/checkboxmarked1.png)
  
 ##### Delete trashcan  Button  
  
