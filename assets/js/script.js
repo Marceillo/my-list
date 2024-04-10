@@ -7,6 +7,7 @@ const inputoutlist = document.querySelector(".listblocks");
 //Event Lisener
 document.addEventListener("DOMContentLoaded", getMylistStorage);
 inputbutton.addEventListener("click", taskAdd);
+
 /** 
  *Functions creat a new task with two buttons.
  *Check button to indicate the task is done or not.
@@ -77,7 +78,6 @@ function taskAdd(event) {
 *The first function adds the item in array to storage.
 *The secon function gets these items and displays it on the page.
 */
-
 function addMylistStorage() {
 
     const listItems = [];
