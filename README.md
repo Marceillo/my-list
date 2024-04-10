@@ -187,7 +187,7 @@ I would have liked to add more functionality to the list so that the user has mo
                       
     
 
-### fixed Bugs
+### Fixed Bugs
 
 - I had a problem with the border-radius style when you added a new task to the input field. As it was not working I found a parent with the same rule and deleted the duplicate rule and this repaired my problem.
 - I had a problem with how the border in the element div from JS is displayed. The solution in the end was to program JS to use a different class name and this resolved the issues. 
@@ -197,7 +197,7 @@ I would have liked to add more functionality to the list so that the user has mo
  
 - The first is how JS code  moves a div inside of an ul element. It does not change the functionality but I would have liked to do it better next time in a more industry-standard way.
 
-#### steps Taken 
+#### Steps Taken 
 
 - When I tried repairing this it broke my code this will mean coding both the CSS and Javascript again.
 
