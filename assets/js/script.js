@@ -108,6 +108,7 @@ function getMylistStorage() {
             }
 
             outDiv.appendChild(newListItem);
+
             //Check button 
             const checkButton = document.createElement('button');
             checkButton.innerHTML = '<i class="fa-solid fa-square-check"></i>';
@@ -131,6 +132,8 @@ function getMylistStorage() {
             });
 
             outDiv.appendChild(checkButton);
+            inputbutton.appendChild(outDiv);
+            
             //delet button 
             const deletButton = document.createElement('button');
             deletButton.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
