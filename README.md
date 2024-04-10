@@ -202,11 +202,11 @@ Deployed the site on GitHub using the following procedure:
 
 The instruction link below on how to fork a project:
 
-[Fork the project]([https://dev.w3.org/html5/spec-LC/introduction.html](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+[Fork the project](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
 
 The instruction link below on how to clone a project:
 
-[Clone the project]([https://github.com/](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) 
+[Clone the project](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) 
 
 ## Credits 
   
