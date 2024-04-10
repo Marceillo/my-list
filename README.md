@@ -24,8 +24,7 @@ This is a list for people to add to do tasks or any other item they would like t
 * [**Deployment**](#deployment)
 * [**Credits**](#credits)
     * [**Content**](#content)
-    * [**Media**](#media)
-*  [**Acknowledgements**](#acknowledgements)
+    * [**Acknowledgements**](#acknowledgements)
   
 # User Experience
 
@@ -46,7 +45,7 @@ This is a list for people to add to do tasks or any other item they would like t
 - The list below has a checked button and a delete button to add some user functionality.
 - It has added functionality by utilizing the local storage of the browser so when you exit and return your items are still there.
 
-![Desktop view with tasks](assets/images/mylistplusitems.png)
+  ![Desktop view with tasks](assets/images/mylistplusitems.png)
   
 ## Colour Scheme  
 
@@ -59,6 +58,10 @@ This is a list for people to add to do tasks or any other item they would like t
 ### Existing Features
 
 - Favicon is a picture of a list to indicate this is a to-do list.
+- Users can add their text to the list and delete and check this.
+- Local storage is used for this site to keep the text after exiting the browser.
+- CSS styling
+- Plain HTML code
   
 #### Javascript adding new tasks to the list. 
 
@@ -81,8 +84,7 @@ This is a list for people to add to do tasks or any other item they would like t
  
  ##### Checked  Button
 
-- When this button is checked, a line through function is created in Java script to indicate that the task has been completed to the end user.
-- The second feature is to update the to-list that the button has been checked and to keep it saved in that format.
+- When this button is checked, a line through and the check box turns green.
 
 #### Inspiration
 
@@ -98,6 +100,7 @@ I would have liked to add more functionality to the list so that the user has mo
  - Able to archive their tasks.
  - Different windows for different tasks.
  - Alert function to alert users of tasks based on the date set for them to be completed.
+
    
 ## Technologies Used
 
@@ -184,14 +187,32 @@ I would have liked to add more functionality to the list so that the user has mo
                       
     
 
-### Unfixed Bugs
+### fixed Bugs
 
 - I had a problem with the border-radius style when you added a new task to the input field. As it was not working I found a parent with the same rule and deleted the duplicate rule and this repaired my problem.
 - I had a problem with how the border in the element div from JS is displayed. The solution in the end was to program JS to use a different class name and this resolved the issues. 
 - The buttons for delete and checked had the issue as when you clicked on the icon element it did not work but when you clicked near it worked. Adjusted the function to see the whole element in Js.
-- Local storage I had a problem with updating the checked and keeping it persist after refresh. Unfortunately have not found a solution.
-- steps taken
-  - 
+
+ ### Unfixed Bugs
+ 
+-The first is how JS code  moves a div inside of an ul element. It does not change the functionality but I would have liked to do it better next time in a more industry-standard way.
+-steps Taken 
+   - When I tried repairing this it broke my code this will mean coding both the CSS and Javascript again.
+-The second bug is the checkbox line the green checkbox after being clicked works fine but after the page refresh the result does not stay marked only the text returns.
+-Steps taken 
+
+  - Research online as to how the local storage works.
+  - searched StackOverflow, W3schools, youtube tutorials,
+  - worked with tutor service to try and find a solution a few ideas came from this but nothing worked.
+  - I asked the mentor and a link was provided to do more research tried this but also to no avail.
+  - I posted my problem on Slack.
+  - I took a pen and paper wrote down my code flow and tried diagnosing it this way.
+  - I have tried a few different codes in my JS to try and help with this problem but just can not find it.
+  - Used the developer tools to try and debug along with console.log.
+    
+
+
+- Local storage I had a problem updating the checked and keeping it persist after Page refresh. 
 
 ## Deployment
 
