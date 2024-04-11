@@ -107,9 +107,7 @@ function getMylistStorage() {
             newListItem.classList.add('new-item');
 
             if (item.isCompleted) {
-                newListItem.style.textDecoration = 'line-through';
-                
-
+                newListItem.style.textDecoration = 'line-through';         
 
             }
 
@@ -133,9 +131,7 @@ function getMylistStorage() {
                     item.isCompleted = true;
                     checkButton.style.color = 'green';
 
-                }
-
-                // Tutor addition
+                }               
                 
                 updateStorage(storedList);
 
@@ -166,7 +162,6 @@ function getMylistStorage() {
 
     }
 }
-
 
 function removeMylistStorage(itemText) {
     const storedList = JSON.parse(localStorage.getItem("storageList"));
