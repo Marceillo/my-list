@@ -75,6 +75,7 @@ This is a list for people to add to do tasks or any other item they would like t
    
  - Function for deleting in JS was also set to remove from Local Storage with the delete trashcan button.
  - The checked button has a line through once checked
+
    ![Delet and check button](assets/images/checkboxmarked1.png)
  
 ##### Delete trashcan  Button  
@@ -176,16 +177,7 @@ I would have liked to add more functionality to the list so that the user has mo
 - Mozilla Firefox
 - Microsoft Edge
 - Brave 
- 
--The responsive design was done manually with Chrome development tools built into the browser.
-
-|        | Galaxy Fold | Galaxy S8+ | iPhone 12pro | iPad mini  | iPad pro | Display <1024px | Display >1025px
-|--------|---------|-----------|----------|------|----------|-----------------|-----------------|
-| Render | pass    | pass      | pass     | pass | pass     | pass            | pass            |
-| Images | pass    | pass      | pass     | pass | pass     | pass            | pass            |
-| Links  | pass    | pass      | pass     | pass | pass     | pass            | pass            |
-                      
-    
+   
 
 ### Fixed Bugs
 
