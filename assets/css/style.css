@@ -29,6 +29,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 /* Field input to add a new list item*/
@@ -64,6 +65,7 @@ button {
     font-size: 30px;
     outline: none;
     cursor: pointer;
+    
 } 
 
 button:hover {
