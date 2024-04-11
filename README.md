@@ -193,7 +193,9 @@ I would have liked to add more functionality to the list so that the user has mo
 #### First bug Steps Taken 
 
 - When I tried repairing this it broke my code this will mean coding both the CSS and Javascript again.
- 
+
+   ![Structure](assets/images/structure-elements.jpg)
+   
 #### Second bug Steps taken 
 
 ##### Before, the checkbox was not working.
