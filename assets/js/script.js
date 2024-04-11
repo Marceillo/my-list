@@ -108,6 +108,8 @@ function getMylistStorage() {
 
             if (item.isCompleted) {
                 newListItem.style.textDecoration = 'line-through';
+                
+
 
             }
 
@@ -123,16 +125,19 @@ function getMylistStorage() {
             
                 if (parent.style.textDecoration === 'line-through') {
                     parent.style.textDecoration = 'none';
-                    checkButton.isCompleted = false;
+                    item.isCompleted = false;
                     checkButton.style.color = '#654321';
 
                 } else {
                     parent.style.textDecoration = 'line-through';
-                    checkButton.isCompleted = true;
+                    item.isCompleted = true;
                     checkButton.style.color = 'green';
 
                 }
-                updateStorage();
+
+                // Tutor addition
+                
+                updateStorage(storedList);
 
             });
 
@@ -175,7 +180,6 @@ function removeMylistStorage(itemText) {
 }
 
 /* Check button update*/
-function updateStorage() {
-    const storedList = JSON.parse(localStorage.getItem("storageList"));
-    localStorage.setItem("storageList", JSON.stringify(storedList));
+function updateStorage(updatedList) {
+        localStorage.setItem("storageList", JSON.stringify(updatedList));
 }

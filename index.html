@@ -2,21 +2,24 @@
 <html lang="en">
 
 <head>
-        
+
     <meta charset="UTF-8">
     <meta name="description"
         content="The site is a to do application where you can add a list to keep track of your tasks or groceries.">
+
     <!--keywords -->
     <meta name="keywords"
         content="to-do-list-organizer,to-do-app, note-taking-app, time-management-app, mobile-to-do-list, grocery list">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
     <!--Favicon-->
     <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
     <title>My List</title>
@@ -24,23 +27,27 @@
 </head>
 
 <body>
+
     <header>
         <h1>My List</h1>
     </header>
+
     <!--Form-->
-    <form id="form" method="post">       
-        
+    <form id="form" method="post">
+
         <!--List input field-->
         <div id="addcontainer">
 
             <input type="text" class="additem" id="inputfield" placeholder="Add your list task." required>
-            
-            <button class="listbutton" type="submit" aria-label="addbutton"><i class="fa-solid fa-square-plus" aria-hidden="true"></i></button>
+
+            <button class="listbutton" type="submit" aria-label="addbutton"><i class="fa-solid fa-square-plus"
+                    aria-hidden="true"></i></button>
             <!--Menu filter-->
-            
+
         </div>
 
     </form>
+
     <!--Note to self list that are added outside the form -->
     <div class="outdivcontainer" id="outdiv">
         <ul class="listblocks">
@@ -48,9 +55,9 @@
         </ul>
     </div>
 
-
     <!--Fontawsome-->
     <script src="https://kit.fontawesome.com/4c3467c6d7.js" crossorigin="anonymous"></script>
+
     <!--Javascript location-->
     <script src="assets/js/script.js"></script>
 </body>
