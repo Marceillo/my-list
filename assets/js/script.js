@@ -4,6 +4,7 @@
 const inputlist = document.querySelector("#inputfield");
 const inputbutton = document.querySelector(".listbutton");
 const inputoutlist = document.querySelector(".listblocks");
+
 //Event Lisener
 document.addEventListener("DOMContentLoaded", getMylistStorage);
 inputbutton.addEventListener("click", taskAdd);
@@ -134,7 +135,7 @@ function getMylistStorage() {
             outDiv.appendChild(checkButton);
             inputbutton.appendChild(outDiv);
             
-            //delet button 
+            //Delet button 
             const deletButton = document.createElement('button');
             deletButton.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
             deletButton.classList.add("delet");

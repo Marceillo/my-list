@@ -12,7 +12,6 @@ body {
     background-color: #EEDD62;
     color: #654321;
     font-family: "Roboto", Lato;
-    
 }
 
 header {
@@ -21,6 +20,7 @@ header {
     font-size: 30px;
 
 }
+
 /* Position the form in center */
 form,
 header {
@@ -30,6 +30,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 /* Field input to add a new list item*/
 #addcontainer {
 
@@ -37,7 +38,6 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-
 
 }
 
@@ -86,6 +86,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-content: center;
+    
 }
 
 /*Target the div that JS creates */
