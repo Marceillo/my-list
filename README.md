@@ -195,6 +195,7 @@ I would have liked to add more functionality to the list so that the user has mo
 - When I tried repairing this it broke my code this will mean coding both the CSS and Javascript again.
  
 #### Second bug Steps taken 
+
 ##### Before, the checkbox was not working.
   - Research online as to how the local storage works.
   - searched StackOverflow, W3schools, youtube tutorials,
@@ -207,9 +208,13 @@ I would have liked to add more functionality to the list so that the user has mo
 
 ##### Result after all the troubleshooting 
 
- ![How it should be](assets/images/bug2linethrough.png)
+ - How it should look after page refresh.
+ 
+ ![bug2](assets/images/bug2linethrough.png)
+ 
+- How it looks when saved in local storage.
 
-![This how it is at the moment](assets/images/mobile-lighthouse.png)
+![bug2 after page refresh](assets/images/bug2button.png)
     
 ## Deployment
 
