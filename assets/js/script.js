@@ -26,18 +26,18 @@ function taskAdd(event) {
     //outlist div 
     const outDiv = document.createElement("div");
     outDiv.classList.add("listdiv");
-
+    
     //create Li 
     const newListItem = document.createElement('li');
     newListItem.innerText = inputlist.value;
     newListItem.classList.add('new-item');
     outDiv.appendChild(newListItem);
-
+    
     //check button 
     const checkButton = document.createElement('button');
     checkButton.innerHTML = '<i class="fa-solid fa-square-check"></i>';
     checkButton.classList.add("done");
-
+    
     //checkbutton event listener
     checkButton.addEventListener('click', event => {
         const parent = event.currentTarget.parentElement;
@@ -54,10 +54,12 @@ function taskAdd(event) {
     });
 
     outDiv.appendChild(checkButton);
+    
     //delete Button 
     const deletButton = document.createElement('button');
     deletButton.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
     deletButton.classList.add("delet");
+    
     //delete button when clicked
     deletButton.addEventListener('click', event => {
         const parent = event.currentTarget.parentElement;
@@ -88,6 +90,7 @@ function addMylistStorage() {
         /* isComplted for the line through to persist after refresh not working*/
         const isCompleted = div.querySelector(".new-item").classList.contains('completed');
         listItems.push({ item: listItem, isCompleted: isCompleted });
+
     });
 
     localStorage.setItem("storageList", JSON.stringify(listItems));
@@ -117,6 +120,7 @@ function getMylistStorage() {
             // check button event listener for getMylistStorage
             checkButton.addEventListener('click', event => {
                 const parent = event.currentTarget.parentElement;
+            
                 if (parent.style.textDecoration === 'line-through') {
                     parent.style.textDecoration = 'none';
                     checkButton.isCompleted = false;
@@ -165,7 +169,7 @@ function removeMylistStorage(itemText) {
     if (toRemove !== -1) {
         storedList.splice(toRemove, 1);
         localStorage.setItem("storageList", JSON.stringify(storedList));
-
+        
     }
 
 }
